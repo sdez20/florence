@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import AskFlorence from "./AskFlorence";
 
 export const metadata: Metadata = {
   title: "Florence",
@@ -23,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <AskFlorence />
+      </body>
     </html>
   );
 }

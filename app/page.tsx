@@ -417,7 +417,7 @@ const BODY = `<nav class="nav">
    <details><summary>What's included in each membership?</summary><div class="ans">Chat with Florence ($18/mo) provides personalized conversational guidance across all 5 disciplines. All Access ($24/mo) includes everything in Chat plus global nutrition guides, somatic routines, practitioner recipes, private storefront access, and partner delivery perks.</div></details>
    <details><summary>What happens when I join the waitlist?</summary><div class="ans">You'll receive early access invitations, launch updates, and the opportunity to secure the Founding Member rate ($14/mo for 6 months). Joining the waitlist is free and does not start a paid subscription.</div></details>
   </div>
-  <div class="support">Have another question? <a href="#join">Ask Florence Support.</a></div>
+  <div class="support">Have another question? <a href="#ask-florence">Ask Florence Support.</a></div>
  </div>
 </section>
 
