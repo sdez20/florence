@@ -442,7 +442,6 @@ const BODY = `<nav class="nav">
   <div class="f"><label>Email address</label><input type="email" placeholder="you@email.com"></div>
   <button type="submit">Join</button>
  </form>
- <div class="note">Design preview only. This form does not send or store information.</div>
 </section>`;
 
 export default function Home() {
