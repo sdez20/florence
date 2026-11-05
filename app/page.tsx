@@ -225,17 +225,25 @@ a{color:inherit;text-decoration:none}
 .cta .tagline{margin-top:48px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14);font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--cta-line)}
 .cta .flogo{font-family:var(--serif);font-size:26px;letter-spacing:7px;margin-bottom:22px}
 
-@media(max-width:860px){
- .hero{grid-template-columns:1fr;min-height:auto}
- .hero-img{min-height:58vh;order:-1}
- .split,.profile-sec{grid-template-columns:1fr;gap:30px}
- .split-img,.pf-img{order:-1}
- .disc-row{grid-template-columns:1fr 1fr;gap:38px 0}
- .disc:nth-child(odd){border-left:0}
- .disc:last-child{grid-column:1/-1}
- .tiles,.plans{grid-template-columns:1fr}
- .steps{grid-template-columns:1fr;gap:26px}
+@media(max-width:820px){
+ .nav{justify-content:center}
  .nav .links{display:none}
+ .hero{grid-template-columns:1fr;min-height:auto}
+ .hero-img{order:-1;min-height:58vh}
+ .hero-text{padding:44px clamp(22px,6vw,40px) 56px}
+ .hero h1{font-size:clamp(38px,10vw,58px)}
+ .split,.profile-sec{grid-template-columns:1fr;gap:0}
+ .split-img,.pf-img{order:-1}
+ .split-img img,.pf-img img{min-height:0;height:auto;aspect-ratio:4/5}
+ .split > div:first-child{padding:46px clamp(22px,6vw,40px) 56px}
+ .profile-sec > div:last-child{padding:46px clamp(22px,6vw,40px) 56px}
+ .disc-row{grid-template-columns:1fr 1fr;row-gap:40px}
+ .disc{border-left:0;padding:0 10px}
+ .disc:last-child{grid-column:1/-1}
+ .statement-box{padding:clamp(44px,11vw,72px) clamp(22px,6vw,34px)}
+ .tiles,.plans{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr;gap:30px}
+ .intro{padding:clamp(48px,11vw,80px) 4px}
  .wl{flex-direction:column;align-items:stretch}
  .wl button{width:100%}
 }
@@ -439,7 +447,6 @@ const BODY = `<nav class="nav">
 
 export default function Home() {
   useEffect(() => {
-    // Reveal animations: fade / slide the feature images in on scroll.
     const imgs = document.querySelectorAll(".split-img, .pf-img");
     if ("IntersectionObserver" in window) {
       const io = new IntersectionObserver(
@@ -458,7 +465,6 @@ export default function Home() {
       imgs.forEach((el) => el.classList.add("in-view"));
     }
 
-    // Waitlist form -> Formspree (same destination as the current site).
     const form = document.querySelector(".cta form.wl") as HTMLFormElement | null;
     if (!form) return;
     let errEl = form.querySelector(".wl-err") as HTMLElement | null;
@@ -492,9 +498,7 @@ export default function Home() {
             email: email.toLowerCase(),
           }),
         });
-      } catch {
-        /* Treat as success for the visitor; Formspree usually still records it. */
-      }
+      } catch {}
       form.innerHTML =
         '<p class="wl-thanks">Thank you for trusting us. Your place on the waitlist is secured, and we will be in touch soon.</p>';
     };
