@@ -5,7 +5,7 @@ import AskFlorence from "./AskFlorence";
 export const metadata: Metadata = {
   title: "Florence",
   description:
-    "A holistic wellness companion for every season of a woman's life. AI-powered, culturally intelligent wellness for women.",
+    "A culturally grounded nutrition AI for women. Personalized guidance built on the food you already cook, informed by five disciplines of women's health.",
 };
 
 // Responsive: the same design reflows to a readable full-width layout on phones.

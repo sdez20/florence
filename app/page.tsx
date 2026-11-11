@@ -249,6 +249,10 @@ a{color:inherit;text-decoration:none}
 }
 
 .cta .wl-thanks{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(19px,2.2vw,26px);color:var(--paper);max-width:42ch;margin:10px auto 0;line-height:1.5}
+/* Cultural nutrition update */
+.intro-line{display:block;margin-top:.7em}
+.disc-sec .sub{line-height:1.12}
+.statement-box h2 em{color:var(--forest)}
 .cta .wl-err{color:#f3c9bd;font-size:12px;letter-spacing:.5px;margin-top:14px;min-height:16px}
 `;
 
@@ -260,8 +264,8 @@ const BODY = `<nav class="nav">
 
 <header class="hero">
  <div class="hero-text">
-  <div class="eyebrow">A New Kind of Health Journey</div>
-  <h1>Your <em>body</em>,<br><span class="caps">traditions</span><br>and <em>history</em> in one<br><span class="caps">conversation</span></h1>
+  <div class="eyebrow">Cultural Nutrition for Women</div>
+  <h1>Your <em>food</em>,<br><span class="caps">traditions</span><br>and <em>health</em> in one<br><span class="caps">conversation</span></h1>
   <a href="#join" class="btn">Join the Waitlist</a>
  </div>
  <div class="hero-img"><img src="/landing/florals.jpg" alt=""></div>
@@ -269,8 +273,7 @@ const BODY = `<nav class="nav">
 
 <section class="intro">
  <div class="wrap">
-  <p class="intro-lead">Ancient wisdom. Modern science. Your unique story. Florence brings together what matters, so you can understand your body in a deeper, richer, more human way.</p>
-  <p class="intro-sub">Florence is an AI-powered, culturally intelligent wellness companion for women.</p>
+  <p class="intro-lead">Ancient wisdom. Modern science.<br>Your kitchen.<span class="intro-line">Florence brings together your lifestyle and culture, so you can nourish your body in a deeper, richer, more human way.</span></p>
  </div>
 </section>
 
@@ -285,29 +288,29 @@ const BODY = `<nav class="nav">
 
    <div class="flip" onclick="this.classList.toggle('flipped')">
     <div class="flip-inner">
-     <div class="flip-face flip-front"><img src="/landing/food.jpg" alt="Nourishment"><div class="topscrim"></div><span class="num">01</span><span class="lab">Food &amp; Nourishment</span><span class="hint"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.5-6.2"/><path d="M3 4v4h4"/></svg>Tap</span></div>
-     <div class="flip-face flip-back"><span class="num">01</span><h3>Food &amp; Nourishment</h3><p>Digestive health, microbiome balance, and the foods that carry your traditions. Florence works with what you already eat so nourishment fits your real life.</p><span class="back-hint">Tap to return</span></div>
+     <div class="flip-face flip-front"><img src="/landing/food.jpg" alt="Cultural food guidance"><div class="topscrim"></div><span class="num">01</span><span class="lab">Cultural Food Guidance</span><span class="hint"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.5-6.2"/><path d="M3 4v4h4"/></svg>Tap</span></div>
+     <div class="flip-face flip-back"><span class="num">01</span><h3>Cultural Food Guidance</h3><p>Your family recipes, weekly staples, and the flavors of home. Florence uses your heritage and cultural foods to give you nutritional guidance that fits your life.</p><span class="back-hint">Tap to return</span></div>
     </div>
    </div>
 
    <div class="flip" onclick="this.classList.toggle('flipped')">
     <div class="flip-inner">
      <div class="flip-face flip-front"><img src="/landing/neck.jpg" alt="Skin and hormones"><div class="topscrim"></div><span class="num">02</span><span class="lab">Hormones &amp; Skin</span><span class="hint"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.5-6.2"/><path d="M3 4v4h4"/></svg>Tap</span></div>
-     <div class="flip-face flip-back"><span class="num">02</span><h3>Hormones &amp; Skin</h3><p>Your cycle, your energy, the shifts that move through every season of womanhood. Florence helps you understand your body so you can care for it with intention.</p><span class="back-hint">Tap to return</span></div>
+     <div class="flip-face flip-back"><span class="num">02</span><h3>Hormones &amp; Skin</h3><p>Florence shows you which foods support your energy, hormones and skin through every season of womanhood.</p><span class="back-hint">Tap to return</span></div>
     </div>
    </div>
 
    <div class="flip" onclick="this.classList.toggle('flipped')">
     <div class="flip-inner">
      <div class="flip-face flip-front"><img src="/landing/silhouette.jpg" alt="Nervous system"><div class="topscrim"></div><span class="num">03</span><span class="lab">Somatic &amp; Rest</span><span class="hint"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.5-6.2"/><path d="M3 4v4h4"/></svg>Tap</span></div>
-     <div class="flip-face flip-back"><span class="num">03</span><h3>Somatic &amp; Rest</h3><p>Movement, rest, and the steadying of your nervous system. Florence guides small daily practices that bring you back to calm, even on the fullest days.</p><span class="back-hint">Tap to return</span></div>
+     <div class="flip-face flip-back"><span class="num">03</span><h3>Somatic &amp; Rest</h3><p>Florence shows you which foods and simple daily practices help calm your nervous system and support better rest.</p><span class="back-hint">Tap to return</span></div>
     </div>
    </div>
 
    <div class="flip" onclick="this.classList.toggle('flipped')">
     <div class="flip-inner">
      <div class="flip-face flip-front"><img src="/landing/eye.jpg" alt="Inner life"><div class="topscrim"></div><span class="num">04</span><span class="lab">Mind &amp; Emotion</span><span class="hint"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 2.5-6.2"/><path d="M3 4v4h4"/></svg>Tap</span></div>
-     <div class="flip-face flip-back"><span class="num">04</span><h3>Mind &amp; Emotion</h3><p>Mindset, emotional wellbeing and resilience, held with cultural intelligence. Florence gets to know your story so support always feels personal.</p><span class="back-hint">Tap to return</span></div>
+     <div class="flip-face flip-back"><span class="num">04</span><h3>Mind &amp; Emotion</h3><p>Mindset, emotional wellbeing and resilience, held with cultural intelligence. Florence gets to know your story to give you the most personal support.</p><span class="back-hint">Tap to return</span></div>
     </div>
    </div>
 
@@ -319,8 +322,8 @@ const BODY = `<nav class="nav">
  <div class="statement-box">
   <div class="statement-inner">
    <div class="eyebrow">Our Core Principle</div>
-   <h2>Price removed. <em>Culture restored.</em></h2>
-   <p>For centuries, people have turned to nature, culture and community for health. Florence reclaims this wisdom, removing the noise, the cultural bias and the premium price, so you can access what truly works, without compromise.</p>
+   <h2>Your culture <em>restored.</em></h2>
+   <p>For generations, women have turned to their kitchens, their elders and their communities for health. Florence reclaims this wisdom, removing the noise, the cultural bias and the premium price, so you can access what truly works.</p>
   </div>
  </div>
 </section>
@@ -328,24 +331,24 @@ const BODY = `<nav class="nav">
 <section class="disc-sec" id="disciplines">
  <div class="wrap">
   <div class="eyebrow">The 5 Disciplines</div>
-  <div class="sub">Five interconnected lenses. One complete you.</div>
+  <div class="sub">Your health is shaped by<br>your mind, body and culture.</div>
   <div class="disc-row">
+   <div class="disc"><svg viewBox="0 0 56 60"><circle cx="28" cy="29" r="22"/><path d="M8 29h40M28 7c-13 9-13 35 0 44M28 7c13 9 13 35 0 44M10 16c11 7 25 7 36 0M10 42c11-7 25-7 36 0"/></svg><h4>Cultural<br>Intelligence</h4><p>Traditions, identity, and your unique cultural context.</p></div>
    <div class="disc"><svg viewBox="0 0 56 60"><path d="M23 8c-5-5-13-2-12 4-8-1-9 9-3 12-5 5-2 12 4 13-3 7 3 12 9 9l4 7 4-2-3-8c9 1 14-5 11-11 7-4 5-12-1-14 3-7-5-12-11-9z"/><path d="M15 12c-5 7 17 1 17 8S10 18 10 25s22 0 22 7-17 0-17 6 10 2 10 2"/></svg><h4>Gut</h4><p>Digestive health, microbiome balance, and nourishment.</p></div>
    <div class="disc"><svg viewBox="0 0 56 60"><path d="M27 54c-2-14-2-27 1-44M26 42C13 43 9 34 9 30c10 0 16 5 17 12zM26 30C14 28 13 19 14 16c8 2 13 7 12 14zM28 21C21 17 21 8 24 4c7 5 8 10 4 17zM27 36c12 0 17-8 16-13-10 1-15 6-16 13zM27 49c12-1 18-9 17-14-10 1-16 7-17 14z"/></svg><h4>Hormone</h4><p>Cycle, fertility, metabolism and endocrine health.</p></div>
    <div class="disc"><svg viewBox="0 0 56 60"><circle cx="28" cy="8" r="4"/><path d="M24 16h8l3 13 4 7-3 2-6-10 1 12 4 15-4 1-4-14-4 14-4-1 4-15 1-12-5 10-3-2 4-7z"/></svg><h4>Somatic</h4><p>Movement, rest, stress and nervous system regulation.</p></div>
    <div class="disc"><svg viewBox="0 0 56 60"><path d="M28 10c-5-5-12-1-13 3-7-1-11 5-9 10-7 5-3 14 3 15 1 6 8 9 13 6l8 2 5 9 4-2-2-10c9-1 15-7 13-14 4-7-1-14-7-14-3-7-10-8-15-5zM28 10l-1 34"/></svg><h4>Psychology</h4><p>Mindset, emotional wellbeing and resilience.</p></div>
-   <div class="disc"><svg viewBox="0 0 56 60"><circle cx="28" cy="29" r="22"/><path d="M8 29h40M28 7c-13 9-13 35 0 44M28 7c13 9 13 35 0 44M10 16c11 7 25 7 36 0M10 42c11-7 25-7 36 0"/></svg><h4>Cultural<br>Intelligence</h4><p>Traditions, identity, and your unique cultural context.</p></div>
   </div>
  </div>
 </section>
 
 <section class="split" id="about">
  <div>
-  <div class="eyebrow">Culturally Intelligent Wellness</div>
-  <h2>Your wellbeing is personal<br>and your support should be <em>too.</em></h2>
+  <div class="eyebrow">Culturally Intelligent Nutrition</div>
+  <h2>Your food is personal<br>and your guidance should be <em>too.</em></h2>
   <p>Your food, traditions, responsibilities, and budget are all a part of your wellbeing.</p>
-  <p>Florence is built to make personalized wellness support simple, affordable and accessible, with cultural intelligence at the heart of every conversation.</p>
-  <p>Whether you are reconnecting with familiar practices or exploring something new, your preferences matter. Florence gets to know your goals, routines, and the practices you value to help you find guidance that fits your life.</p>
+  <p>Florence is built to make personalized nutritional guidance simple, affordable and accessible, with cultural intelligence at the heart of every conversation.</p>
+  <p>Whether you are cooking the dishes you grew up eating or exploring something new, your preferences matter. Florence gets to know your goals, routines, and the meals you love, to give you nutritional guidance that fits your life.</p>
  </div>
  <div class="split-img"><img src="/landing/whiteflower.jpg" alt="A woman seen fully"></div>
 </section>
@@ -355,19 +358,19 @@ const BODY = `<nav class="nav">
  <div>
   <div class="eyebrow">Your Cultural Profile</div>
   <h3>One conversation.</h3>
-  <p class="lead">Florence is an AI-powered, culturally intelligent wellness companion. Through a thoughtful conversation, it learns about your goals, routines, cultural background, and the practices you value to shape personalized wellness guidance around your life.</p>
+  <p class="lead">Florence is an AI cultural nutrition companion. Through a thoughtful conversation, it learns about your goals, routines, cultural background, and the meals you already cook to give you personalized nourishment guidance.</p>
   <div class="chat">
    <div class="crow"><div class="av">F</div><div class="bub them"><span class="sp">Florence</span>What are your main health goals right now?</div></div>
    <div class="crow me"><div class="bub me"><span class="sp">You</span>I want to feel more balanced, especially with my cycle and energy levels.</div></div>
-   <div class="crow"><div class="av">F</div><div class="bub them"><span class="sp">Florence</span>That's helpful. Tell me about your cultural background or family traditions around food, wellness or healing.</div></div>
+   <div class="crow"><div class="av">F</div><div class="bub them"><span class="sp">Florence</span>That's helpful. Tell me about the meals you grew up eating and what you find yourself cooking most weeks.</div></div>
   </div>
  </div>
 </section>
 
 <section class="steps-sec"><div class="wrap"><div class="steps">
- <div class="step"><span class="sn">01</span><h4>Share what matters.</h4><p>Talk about your wellbeing goals, everyday routines, cultural traditions, and the rituals you already value.</p></div>
- <div class="step"><span class="sn">02</span><h4>Explore your wellbeing.</h4><p>Bring your experiences into focus through five connected disciplines: gut, hormone, somatic, psychology, and cultural intelligence.</p></div>
- <div class="step"><span class="sn">03</span><h4>Find your next step.</h4><p>Explore practical everyday rituals and guidance that consider your preferences, responsibilities, and budget.</p></div>
+ <div class="step"><span class="sn">01</span><h4>Share what matters.</h4><p>Talk about your goals, everyday routines, cultural traditions, and the meals you already cook.</p></div>
+ <div class="step"><span class="sn">02</span><h4>Florence connects the dots.</h4><p>Your food is seen through five connected disciplines: cultural intelligence, gut, hormone, somatic and psychology.</p></div>
+ <div class="step"><span class="sn">03</span><h4>One meal for today, made for you.</h4><p>One practical food action for today that fits your preferences, responsibilities and budget.</p></div>
 </div></div></section>
 
 <section class="mem" id="memberships">
@@ -382,11 +385,11 @@ const BODY = `<nav class="nav">
     <div class="pe">Conversational Care</div>
     <h3>Chat with Florence</h3>
     <div class="price">$18 <span>/ month</span></div>
-    <div class="pd">Personalized wellness support through thoughtful daily conversation.</div>
+    <div class="pd">Personalized cultural nutrition support through thoughtful daily conversation.</div>
     <ul>
-     <li>Conversations about your goals, routines, traditions, and preferences.</li>
-     <li>A culturally intelligent approach across all 5 disciplines.</li>
-     <li>Guidance tailored to your real everyday life.</li>
+     <li>Conversations about the food you cook, your routines, traditions and goals.</li>
+     <li>Guidance shaped by all five disciplines.</li>
+     <li>One practical nourishment step at a time.</li>
     </ul>
     <a href="#join" class="btn">Join the Waitlist</a>
    </div>
@@ -394,10 +397,10 @@ const BODY = `<nav class="nav">
     <div class="pe">The Full Experience</div>
     <h3>All Access</h3>
     <div class="price">$24 <span>/ month</span></div>
-    <div class="pd">Chat with Florence, plus a wider ecosystem of cultural wellness support.</div>
+    <div class="pd">Everything in Chat with Florence, plus guides, recipes and daily practices you can use any time, without starting a conversation.</div>
     <ul>
-     <li>Everything included in Chat with Florence.</li>
      <li>Nutritional guidance for skin, gut, and hormone health rooted in global food traditions.</li>
+     <li>Everything included in Chat with Florence.</li>
      <li>Recipes from certified holistic practitioners.</li>
      <li>Daily guided somatic movement and regulation practices.</li>
      <li>Exclusive access to Florence's private small-batch herb and wellness shop.</li>
@@ -421,8 +424,8 @@ const BODY = `<nav class="nav">
    <h2>Get to Know Florence</h2>
   </div>
   <div class="faq-wrap">
-   <details open><summary>What is Florence?</summary><div class="ans">Florence is an AI-powered, culturally intelligent wellness companion that offers personalized support through conversation. It gets to know your goals, routines, traditions, and preferences to help you explore wellbeing in a way that fits your life.</div></details>
-   <details><summary>What's included in each membership?</summary><div class="ans">Chat with Florence ($18/mo) provides personalized conversational guidance across all 5 disciplines. All Access ($24/mo) includes everything in Chat plus global nutrition guides, somatic routines, practitioner recipes, private storefront access, and partner delivery perks.</div></details>
+   <details open><summary>What is Florence?</summary><div class="ans">Florence is an AI cultural nutrition companion for women. It learns the food you cook, your traditions and how you feel, then offers one practical nourishment action at a time.</div></details>
+   <details><summary>What's included in each membership?</summary><div class="ans">Chat with Florence ($18/mo) gives you personalized cultural nutritional guidance through daily conversation, shaped by all five disciplines. All Access ($24/mo) includes everything in Chat, plus nutrition guides for skin, gut and hormone health, practitioner recipes, daily somatic practices, private shop access, and partner delivery perks.</div></details>
    <details><summary>What happens when I join the waitlist?</summary><div class="ans">You'll receive early access invitations, launch updates, and the opportunity to secure the Founding Member rate ($14/mo for 6 months). Joining the waitlist is free and does not start a paid subscription.</div></details>
   </div>
   <div class="support">Have another question? <a href="#ask-florence">Ask Florence Support.</a></div>
@@ -430,7 +433,7 @@ const BODY = `<nav class="nav">
 </section>
 
 <section class="wellness">
- <p>Florence is a personalized wellness companion made simple, affordable and accessible.</p>
+ <p>Florence is cultural nutrition made personal, affordable and accessible.</p>
 </section>
 
 <section class="cta" id="join">
@@ -442,6 +445,7 @@ const BODY = `<nav class="nav">
   <div class="f"><label>Email address</label><input type="email" placeholder="you@email.com"></div>
   <button type="submit">Join</button>
  </form>
+ <div class="tagline">AI nutritional guidance, shaped by the food you love</div>
 </section>`;
 
 export default function Home() {
