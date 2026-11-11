@@ -252,7 +252,7 @@ a{color:inherit;text-decoration:none}
 /* Cultural nutrition update */
 .intro-line{display:block;margin-top:.7em}
 .disc-sec .sub{line-height:1.12}
-.statement-box h2 em{color:var(--forest)}
+.statement-box h2 em{color:#b31b1b}
 .cta .wl-err{color:#f3c9bd;font-size:12px;letter-spacing:.5px;margin-top:14px;min-height:16px}
 `;
 
